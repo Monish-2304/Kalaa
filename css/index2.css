@@ -96,18 +96,16 @@ section {
 	font-weight: bolder;
 }
 
-/* .header .logo i {
-	color: #219150;
-} */
-
 .header .navbar a {
 	margin-left: 2rem;
 	font-size: 1.7rem;
-	color: #10221b;
+	font-weight: 700;
+	color: #60a933;
 }
 
 .header .navbar a:hover {
-	color: #219150;
+	font-weight: 700;
+	color: #f3c714;
 }
 
 .header .navbar #nav-close {
@@ -122,12 +120,13 @@ section {
 	font-size: 2.5rem;
 	margin-left: 2rem;
 	cursor: pointer;
-	color: #10221b;
+	color: #60a933;
 }
 
 .header .icons a:hover,
 .header .icons div:hover {
-	color: #219150;
+	font-weight: 700;
+	color: #f3c714;
 }
 
 .header #menu-btn {
@@ -240,7 +239,6 @@ section {
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 	padding: 2rem 9%;
-	mix-blend-mode: color;
 }
 
 .home .box.second {
@@ -289,7 +287,6 @@ section {
 
 .category {
 	background-color: #a20021;
-	mix-blend-mode: color;
 }
 .category .box-container {
 	display: -ms-grid;
@@ -324,7 +321,20 @@ section {
 }
 
 .about {
-	background: #eee;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.5)),
+			to(rgba(0, 0, 0, 0.5))
+		),
+		url(../images/aboutbg.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(../images/aboutbg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	/* background: #eee; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -335,7 +345,9 @@ section {
 	flex-wrap: wrap;
 	gap: 2rem;
 }
-
+.about #aboutreadmore {
+	color: white;
+}
 .about .image {
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 42rem;
@@ -363,14 +375,14 @@ section {
 
 .about .content p {
 	font-size: 1.5rem;
-	color: #10221b;
+	color: #ffffff;
 	padding: 1rem 0;
 	line-height: 2;
 }
 
 .shop .slide {
 	border: 0.2rem solid #10221b;
-	background-color: #ff6663;
+	background-color: #629460;
 }
 
 .shop .slide:hover .image .icons {
@@ -515,116 +527,6 @@ section {
 	color: #219150;
 }
 
-.services {
-	background: #eee;
-}
-
-.services .box-container {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: (minmax(31rem, 1fr)) [auto-fit];
-	grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-	gap: 1.5rem;
-}
-
-.services .box-container .box {
-	text-align: center;
-	padding: 2rem;
-	border: 0.2rem solid #10221b;
-	border-radius: 0.5rem;
-	background: #fff;
-}
-
-.services .box-container .box:hover {
-	background: #10221b;
-}
-
-.services .box-container .box:hover img {
-	-webkit-filter: invert(1);
-	filter: invert(1);
-}
-
-.services .box-container .box:hover p {
-	color: #fff;
-}
-
-.services .box-container .box:hover .btn {
-	border-color: #fff;
-	color: #fff;
-}
-
-.services .box-container .box:hover .btn:hover {
-	background: #fff;
-	color: #10221b;
-}
-
-.services .box-container .box img {
-	height: 10rem;
-	margin-bottom: 1rem;
-}
-
-.services .box-container .box h3 {
-	font-size: 2rem;
-	color: #219150;
-}
-
-.services .box-container .box p {
-	font-size: 1.5rem;
-	color: #10221b;
-	padding: 1rem 0;
-	line-height: 2;
-}
-
-.reviews .slide .text {
-	padding: 2rem;
-	font-size: 1.5rem;
-	font-style: italic;
-	background: #eee;
-	border-radius: 0.5rem;
-	color: #10221b;
-	line-height: 2;
-	position: relative;
-	z-index: 0;
-	margin-bottom: 3rem;
-}
-
-.reviews .slide .text::before {
-	content: "";
-	position: absolute;
-	bottom: -1.5rem;
-	left: 0.7rem;
-	height: 3rem;
-	width: 3rem;
-	background: #eee;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.reviews .slide .user {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	gap: 1rem;
-}
-
-.reviews .slide .user img {
-	height: 7rem;
-	width: 7rem;
-	border-radius: 50%;
-}
-
-.reviews .slide .user h3 {
-	font-size: 2rem;
-	color: #10221b;
-}
-
-.reviews .slide .user span {
-	color: #219150;
-	font-size: 1.5rem;
-}
 #team {
 	color: black;
 }
@@ -680,10 +582,23 @@ section {
 	color: #10221b;
 }
 #subscribe {
-	color: #10221b;
+	font-weight: 500;
+	color: #fff;
 }
 .newsletter {
-	background: #4a6670;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.5)),
+			to(rgba(0, 0, 0, 0.5))
+		),
+		url(../images/subscribe.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url(../images/subscribe.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .newsletter .content {
@@ -697,7 +612,7 @@ section {
 .newsletter .content p {
 	font-size: 1.5rem;
 	line-height: 2;
-	color: #10221b;
+	color: #fff;
 }
 
 .newsletter .content form {
@@ -748,9 +663,9 @@ section {
 			from(rgba(0, 0, 0, 0.5)),
 			to(rgba(0, 0, 0, 0.5))
 		),
-		url(../images/footer-bg.jpg) no-repeat;
+		url(../images/hawamahal.jpg) no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../images/footer-bg.jpg) no-repeat;
+		url(../images/hawamahal.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -926,4 +841,3 @@ section {
 		font-size: 3rem;
 	}
 }
-/*# sourceMappingURL=style.css.map */
