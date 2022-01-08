@@ -224,13 +224,13 @@ section {
 	padding: 0;
 }
 .swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    padding-bottom: 7rem;
-}					
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+	padding-bottom: 7rem;
+}
 .home .box {
 	min-width: 100%;
 	margin-top: -50vh;
@@ -460,7 +460,19 @@ section {
 }
 
 .packages {
-	background: #42033d;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.5)),
+			to(rgba(0, 0, 0, 0.5))
+		),
+		url(/images/gallery4.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+		url(/images/gallery4.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .packages .box-container {
@@ -473,7 +485,7 @@ section {
 
 .packages .box-container .box {
 	text-align: center;
-	background: #fff;
+	background: #03071e;
 	border: 0.2rem solid #10221b;
 	-webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -520,12 +532,12 @@ section {
 .packages .box-container .box .content h3 {
 	margin-top: 1rem;
 	font-size: 2rem;
-	color: #10221b;
+	color: #d62828;
 }
 
 .packages .box-container .box .content p {
 	font-size: 1.5rem;
-	color: #10221b;
+	color: #c05757e7;
 	padding: 1rem 0;
 	line-height: 2;
 }
@@ -828,7 +840,7 @@ section {
 	.home .box .content {
 		display: flex;
 		justify-content: center;
-		
+
 		/* text-align: center; */
 	}
 	.home .box .content span {
@@ -839,10 +851,9 @@ section {
 		font-size: 4rem;
 		float: right;
 	}
-	#loginbtn{
+	#loginbtn {
 		width: fit-content;
-		
-		
+
 		padding: 2rem;
 	}
 	.swiper-button-next::after,
